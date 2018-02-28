@@ -25,5 +25,6 @@ dependencies {
 
     // Use JUnit test framework
     testImplementation 'junit:junit:4.12'
+    testCompile group: 'io.appium', name: 'java-client', version: '4.1.2'
 }
 

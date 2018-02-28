@@ -1,0 +1,26 @@
+{
+  "name": "appium_tutorial",
+  "version": "1.0.0",
+  "description": "An Appium totorial I am going through.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jayzamazing/Appium_Tutorial.git"
+  },
+  "keywords": [
+    "Appium",
+    "Appium",
+    "Java",
+    "Client",
+    "Java"
+  ],
+  "author": "Adrian J Lopez <adrianjaylopez@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jayzamazing/Appium_Tutorial/issues"
+  },
+  "homepage": "https://github.com/jayzamazing/Appium_Tutorial#readme"
+}

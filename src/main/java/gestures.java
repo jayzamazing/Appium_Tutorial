@@ -13,10 +13,13 @@ public class gestures extends base{
 		driver.findElementByXPath("//android.widget.TextView[@text='Views']").click();
 		//Tap
 		TouchAction t = new TouchAction(driver);
-		t.tap(driver.findElementByXPath("//android.widget.TextView[@text='Expandable Lists']")).perform();
-		driver.findElementByXPath("//android.widget.TextView[@text='1. Custom Adapter']").click();
+		t.tap(driver
+				.findElementByXPath("//android.widget.TextView[@text='Expandable Lists']")).perform();
+		driver
+		.findElementByXPath("//android.widget.TextView[@text='1. Custom Adapter']").click();
 		//press and hold and release
-		t.press(driver.findElementByXPath("//android.widget.TextView[@text='People Names']")).waitAction(Duration.ofSeconds(3)).release().perform();
+		t.press(driver.findElementByXPath("//android.widget.TextView[@text='People Names']"))
+		.waitAction(Duration.ofSeconds(3)).release().perform();
 		System.out.println(driver.findElementById("android:id/title").getText());
 	}
 }

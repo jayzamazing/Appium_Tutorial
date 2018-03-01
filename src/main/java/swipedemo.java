@@ -15,6 +15,8 @@ public class swipedemo extends base{
 		driver.findElementByAndroidUIAutomator("text(\"2. Inline\")").click();
 		driver.findElementByXPath("//*[@content-desc='9']").click();
 		TouchAction t = new TouchAction(driver);
-		t.press(driver.findElementByXPath("//*[@content-desc='15']")).waitAction(Duration.ofSeconds(2)).moveTo(driver.findElementByXPath("//*[@content-desc='45']")).perform();	
+		t.press(driver.findElementByXPath("//*[@content-desc='15']"))
+		.waitAction(Duration.ofSeconds(2)).moveTo(driver
+				.findElementByXPath("//*[@content-desc='45']")).perform();	
 	}
 }

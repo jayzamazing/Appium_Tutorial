@@ -10,7 +10,7 @@ public class base {
 	public static AndroidDriver<AndroidElement> Capabilities() throws MalformedURLException {
 		//get the apk file
 		File f = new File("src/main/java");
-		File fs = new File(f, "ApiDemos-debug.apk");
+		File fs = new File(f, "Raaga.apk");
 		//create capabilities
 		DesiredCapabilities cap = new DesiredCapabilities();
 		cap.setCapability(MobileCapabilityType.DEVICE_NAME, "Pixel XL API 27");

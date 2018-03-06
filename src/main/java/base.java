@@ -13,7 +13,25 @@ public class base {
 		File fs = new File(f, "Raaga.apk");
 		//create capabilities
 		DesiredCapabilities cap = new DesiredCapabilities();
+		
 		cap.setCapability(MobileCapabilityType.DEVICE_NAME, "Pixel XL API 27");
+		cap.setCapability(MobileCapabilityType.APP, fs.getAbsolutePath());
+		//driver to connect to server
+		AndroidDriver<AndroidElement> driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), cap);
+		return driver;
+	}
+	public static AndroidDriver<AndroidElement> Capabilities(String device) throws MalformedURLException {
+		//get the apk file
+		File f = new File("src/main/java");
+		File fs = new File(f, "Raaga.apk");
+		//create capabilities
+		DesiredCapabilities cap = new DesiredCapabilities();
+		
+		if (device.equals("emulator")) {
+			cap.setCapability(MobileCapabilityType.DEVICE_NAME, "Pixel XL API 27");
+		} else {
+			cap.setCapability(MobileCapabilityType.DEVICE_NAME, "Android Device");
+		}
 		cap.setCapability(MobileCapabilityType.APP, fs.getAbsolutePath());
 		//driver to connect to server
 		AndroidDriver<AndroidElement> driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), cap);
